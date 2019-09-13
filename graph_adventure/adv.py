@@ -32,7 +32,6 @@ rooms[0] = player.currentRoom.getExits()
 while len(rooms) < len(roomGraph) - 1:
     if player.currentRoom.id not in rooms:
         rooms[player.currentRoom.id] = player.currentRoom.getExits()
-        rooms[player.currentRoom.id] = player.currentRoom.getExits()
         lastRoom = reversedPath[-1]
         rooms[player.currentRoom.id].remove(lastRoom)
 
